@@ -25,7 +25,7 @@ class App extends Component {
             textAlign: 'center',
           }}
         >
-          <GradientWrap colors={['#13dab9', '#826fe3']} percents={[20, 80]}>
+          <GradientWrap colors={['#00c9ff', '#92fe9d']} percents={[20, 80]}>
             <h1 style={{ marginBottom: 80 }}>Where's my CTO?</h1>
           </GradientWrap>
           <h2>
