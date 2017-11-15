@@ -1,19 +1,39 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
+import { MuiThemeProvider } from 'material-ui'
+import { getMuiTheme } from 'material-ui/styles'
+import { lightBlueA100 } from 'material-ui/styles/colors'
+import 'typeface-roboto'
+
 import './App.css'
+import GradientWrap from './GradientWrap'
+
+const muiTheme = getMuiTheme({
+  palette: {
+    primary1Color: lightBlueA100,
+  },
+})
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <MuiThemeProvider muiTheme={muiTheme}>
+        <div
+          style={{
+            paddingTop: 40,
+            width: '80%',
+            margin: '0 auto',
+            textAlign: 'center',
+          }}
+        >
+          <GradientWrap colors={['#13dab9', '#826fe3']} percents={[20, 80]}>
+            <h1 style={{ marginBottom: 80 }}>Where's my CTO?</h1>
+          </GradientWrap>
+          <h2>
+            Be part of a global network of non-technical founders and get access
+            to the insights of rock-star CTOs
+          </h2>
+        </div>
+      </MuiThemeProvider>
     )
   }
 }

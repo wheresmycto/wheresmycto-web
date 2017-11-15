@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "lodash": "^4.17.4",
+    "material-ui": "^0.19.4",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "typeface-roboto": "^0.0.45"
   },
   "scripts": {
     "precommit": "lint-staged && yarn test --coverage",

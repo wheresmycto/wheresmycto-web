@@ -1,28 +1,28 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Gobold Uplow';
+  src: url('./gobold.otf') format('otf');
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+h1 {
+  font-family: 'Gobold Uplow', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 92px;
+  letter-spacing: -4px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.App-title {
-  font-size: 1.5em;
+h2 {
+  font-weight: 400;
+  font-size: 36px;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+img {
+  max-width: 100%;
 }
