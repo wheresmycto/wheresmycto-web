@@ -4595,6 +4595,10 @@ normalize-url@^1.4.0:
     query-string "^4.1.0"
     sort-keys "^1.0.0"
 
+normalize.css@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-7.0.0.tgz#abfb1dd82470674e0322b53ceb1aaf412938e4bf"
+
 npm-path@^2.0.2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/npm-path/-/npm-path-2.0.3.tgz#15cff4e1c89a38da77f56f6055b24f975dfb2bbe"
@@ -6537,26 +6541,6 @@ type-is@~1.6.15:
 typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
-
-typeface-anton@^0.0.44:
-  version "0.0.44"
-  resolved "https://registry.yarnpkg.com/typeface-anton/-/typeface-anton-0.0.44.tgz#98e04bf738e6512a258c4560ef6fc0a9c00b39ac"
-
-typeface-baloo@^0.0.44:
-  version "0.0.44"
-  resolved "https://registry.yarnpkg.com/typeface-baloo/-/typeface-baloo-0.0.44.tgz#d1dd56ab8f073cc8900db1ec3e8d10a55d4774af"
-
-typeface-fredoka-one@^0.0.44:
-  version "0.0.44"
-  resolved "https://registry.yarnpkg.com/typeface-fredoka-one/-/typeface-fredoka-one-0.0.44.tgz#fa48dcd73ca6586641aec8b2d3af804cf249ecf5"
-
-typeface-oswald@^0.0.45:
-  version "0.0.45"
-  resolved "https://registry.yarnpkg.com/typeface-oswald/-/typeface-oswald-0.0.45.tgz#b15d5c021a8f0d69b4666deed57e568b36157b89"
-
-typeface-press-start-2p@^0.0.44:
-  version "0.0.44"
-  resolved "https://registry.yarnpkg.com/typeface-press-start-2p/-/typeface-press-start-2p-0.0.44.tgz#5e86f7279914edd9c7a960365ae3532c12c408e8"
 
 typeface-roboto@^0.0.45:
   version "0.0.45"

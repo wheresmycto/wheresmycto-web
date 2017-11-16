@@ -1,25 +1,5 @@
-@font-face {
-  font-family: 'Heroic Condensed';
-  src: url('./heroiccondensed-bold-webfont.woff') format('woff');
-}
-
 body {
   font-family: 'Roboto', sans-serif;
-}
-
-h1 {
-  font-family: 'Heroic Condensed', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 12vw;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-h2 {
-  font-weight: 400;
-  font-size: 36px;
 }
 
 img {
