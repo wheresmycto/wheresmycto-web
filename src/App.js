@@ -58,6 +58,16 @@ class App extends Component {
             <li>Finally get the respect you deserve as a founder</li>
           </ul>
           <RaisedButton label="Join us for free" primary={true} />
+          <p>
+            Made by{' '}
+            <a
+              href="http://seasoned.cc"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Seasoned
+            </a>
+          </p>
         </div>
       </MuiThemeProvider>
     )
