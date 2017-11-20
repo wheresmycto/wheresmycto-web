@@ -21,7 +21,9 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: yarn install
+      - run:
+          name: Install dependencies
+          command: yarn install
 
       - save_cache:
           paths:
@@ -29,12 +31,16 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run eslint
-      - run: ./node_modules/.bin/eslint ./
+      - run:
+          name: Run Linter
+          command: ./node_modules/.bin/eslint ./
 
       # run tests!
-      - run: yarn test -- --coverage
+      - run:
+          name: Run tests
+          command: yarn test -- --coverage
 
       # coverage report
       - run:
-          name: code-coverage
+          name: Send code coverage
           command: bash <(curl -s https://codecov.io/bash) || echo "Codecov did not collect coverage reports"
