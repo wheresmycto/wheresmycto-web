@@ -20,9 +20,9 @@ class App extends Component {
   render() {
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
-        <Auth
-          render={authProps => (
-            <Router>
+        <Router>
+          <Auth
+            render={authProps => (
               <Switch>
                 <Route
                   exact
@@ -32,9 +32,9 @@ class App extends Component {
                   )}
                 />
               </Switch>
-            </Router>
-          )}
-        />
+            )}
+          />
+        </Router>
       </MuiThemeProvider>
     )
   }

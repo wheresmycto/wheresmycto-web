@@ -30,7 +30,7 @@ const Home = props => (
     <RaisedButton
       label="Join us for free"
       primary={true}
-      onClick={props.auth.signIn}
+      onClick={props.auth.openDialog}
     />
     <ul>
       <li>Be part of a global network of non-technical founders</li>
@@ -42,7 +42,11 @@ const Home = props => (
       <li>Be confident you're not wasting precious money and resources</li>
       <li>Finally get the respect you deserve as a founder</li>
     </ul>
-    <RaisedButton label="Join us for free" primary={true} />
+    <RaisedButton
+      label="Join us for free"
+      primary={true}
+      onClick={props.auth.openDialog}
+    />
     <p>
       Made by{' '}
       <a href="http://seasoned.cc" target="_blank" rel="noreferrer noopener">
