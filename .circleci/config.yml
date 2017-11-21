@@ -27,7 +27,7 @@ jobs:
 
       - save_cache:
           paths:
-            - node_modules
+          - node_modules
           - v1-dependencies-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
 
       # run eslint
