@@ -1,15 +1,29 @@
 import React, { Component } from 'react'
 
+import Layout from '../layout/Layout'
+
 class Dashboard extends Component {
   componentWillMount() {
-    const { history, auth: { currentUser } } = this.props
+    this.requireCurrentUser(this.props)
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.requireCurrentUser(nextProps)
+  }
+
+  requireCurrentUser(props) {
+    const { history, auth: { currentUser } } = props
     if (!currentUser) {
       history.replace('/')
     }
   }
 
   render() {
-    return <h1>Dashboard</h1>
+    return (
+      <Layout {...this.props}>
+        <h2>Ask any question and a wise CTO will answer</h2>
+      </Layout>
+    )
   }
 }
 

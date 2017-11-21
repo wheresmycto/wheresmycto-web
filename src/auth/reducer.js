@@ -29,6 +29,8 @@ export default (state = initialState, action = {}) => {
       return {
         ...state,
         startingUp: false,
+        credentials: null,
+        currentUser: null,
       }
     }
     case '@auth/USER_INFO_SUCCESS': {
