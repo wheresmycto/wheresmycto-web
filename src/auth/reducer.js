@@ -22,7 +22,6 @@ export default (state = initialState, action = {}) => {
     case '@auth/SET_CREDENTIALS': {
       return {
         ...state,
-        startingUp: false,
         credentials: action.credentials,
       }
     }
@@ -30,6 +29,20 @@ export default (state = initialState, action = {}) => {
       return {
         ...state,
         startingUp: false,
+      }
+    }
+    case '@auth/USER_INFO_SUCCESS': {
+      return {
+        ...state,
+        startingUp: false,
+        currentUser: action.user,
+      }
+    }
+    case '@auth/USER_INFO_FAILURE': {
+      return {
+        ...state,
+        startingUp: false,
+        error: action.error,
       }
     }
     default:

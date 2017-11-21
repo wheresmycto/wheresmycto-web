@@ -3,6 +3,7 @@ import auth0 from './auth0'
 export const credentialsKey = 'wheresMyCtoAuthCredentials'
 
 export const openDialog = () => {
+  localStorage.removeItem(credentialsKey)
   auth0.authorize()
   return { type: '@auth/OPEN_DIALOG' }
 }
@@ -27,4 +28,16 @@ export const setCredentials = credentials => ({
 export const signOut = () => {
   localStorage.removeItem(credentialsKey)
   return { type: '@auth/SIGN_OUT' }
+}
+
+export const userInfo = ({ accessToken }) => dispatch => {
+  dispatch({ type: '@auth/USER_INFO_REQUEST', accessToken })
+
+  auth0.client.userInfo(accessToken, (error, user) => {
+    if (user) {
+      dispatch({ type: '@auth/USER_INFO_SUCCESS', user })
+    } else {
+      dispatch({ type: '@auth/USER_INFO_FAILURE', error })
+    }
+  })
 }

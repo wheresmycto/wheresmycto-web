@@ -12,7 +12,7 @@ const auth0 = new WebAuth({
   redirectUri: REACT_APP_AUTH0_CALLBACK_URL,
   audience: `https://${REACT_APP_AUTH0_DOMAIN}/userinfo`,
   responseType: 'token id_token',
-  scope: 'openid',
+  scope: 'openid profile email',
 })
 
 export default auth0

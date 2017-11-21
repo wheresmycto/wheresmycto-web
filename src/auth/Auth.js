@@ -22,10 +22,19 @@ class Auth extends Component {
     }
   }
 
-  render() {
-    const { render, startingUp } = this.props
+  componentWillReceiveProps(nextProps) {
+    const { credentials, userInfo } = nextProps
+    const { credentials: oldCredentials } = this.props
 
-    if (startingUp) {
+    if (credentials && !oldCredentials) {
+      userInfo(credentials)
+    }
+  }
+
+  render() {
+    const { render, startingUp, credentials, currentUser } = this.props
+
+    if (startingUp || (credentials && !currentUser)) {
       return <Loading />
     }
 

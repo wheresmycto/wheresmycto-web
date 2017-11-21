@@ -11,7 +11,7 @@ class Callback extends Component {
       } else if (error) {
         failure(error)
       }
-      history.replace('/')
+      history.push('/')
     })
   }
 
