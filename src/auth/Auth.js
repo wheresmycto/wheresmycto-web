@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Route } from 'react-router-dom'
+import { Route, withRouter } from 'react-router-dom'
 
 import Children from '../Children'
 import Loading from '../Loading'
@@ -42,4 +42,6 @@ class Auth extends Component {
   }
 }
 
-export default connect(state => ({ ...state.auth }), actions)(Auth)
+const ConnectedAuth = connect(state => ({ ...state.auth }), actions)(Auth)
+
+export default withRouter(ConnectedAuth)
