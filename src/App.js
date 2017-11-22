@@ -8,7 +8,8 @@ import 'typeface-roboto'
 
 import './App.css'
 import Auth from './auth/Auth'
-import HomePage from './home/HomePage'
+import Home from './home/Home'
+import Dashboard from './dashboard/Dashboard'
 
 const muiTheme = getMuiTheme({
   palette: {
@@ -20,21 +21,28 @@ class App extends Component {
   render() {
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
-        <Auth
-          render={authProps => (
-            <Router>
+        <Router>
+          <Auth
+            render={authProps => (
               <Switch>
                 <Route
                   exact
                   path="/"
                   render={routeProps => (
-                    <HomePage auth={{ ...authProps }} {...routeProps} />
+                    <Home auth={{ ...authProps }} {...routeProps} />
+                  )}
+                />
+                <Route
+                  exact
+                  path="/dashboard"
+                  render={routeProps => (
+                    <Dashboard auth={{ ...authProps }} {...routeProps} />
                   )}
                 />
               </Switch>
-            </Router>
-          )}
-        />
+            )}
+          />
+        </Router>
       </MuiThemeProvider>
     )
   }
