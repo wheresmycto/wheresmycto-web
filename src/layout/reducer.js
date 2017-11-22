@@ -1,5 +1,5 @@
 const initialState = {
-  drawerOpen: true,
+  drawerOpen: false,
 }
 
 export default (state = initialState, action = {}) => {

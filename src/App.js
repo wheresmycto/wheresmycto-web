@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { MuiThemeProvider } from 'material-ui'
 import { getMuiTheme } from 'material-ui/styles'
-import { grey700 } from 'material-ui/styles/colors'
+import { grey500 } from 'material-ui/styles/colors'
 import 'normalize.css'
 import 'typeface-roboto'
 
@@ -13,7 +13,7 @@ import Dashboard from './dashboard/Dashboard'
 
 const muiTheme = getMuiTheme({
   palette: {
-    primary1Color: grey700,
+    primary1Color: grey500,
   },
 })
 

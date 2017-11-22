@@ -14,7 +14,7 @@ class Home extends Component {
 
     return (
       <div style={{ textAlign: 'center', width: '80%', margin: '0 auto' }}>
-        <h1>{"Where's my CTO?"}</h1>
+        <h1>Where&#39;s my CTO?</h1>
         <h2>
           Get access to the insights of wise CTOs{' '}
           <span role="img" aria-label="Sage">
@@ -22,10 +22,11 @@ class Home extends Component {
           </span>
         </h2>
         <p>
-          We know it's not always easy to be a non-technical founder. It's hard
-          to earn the respect of the tech guys when you don't know how to code.
-          Heck, sometimes it's even hard to trust they're really doing what
-          needs to be done! That is: if you manage to attract them at all{' '}
+          We know it&#39;s not always easy to be a non-technical founder.
+          It&#39;s hard to earn the respect of the tech guys when you don&#39;t
+          know how to code. Heck, sometimes it&#39;s even hard to trust
+          they&#39;re really doing what needs to be done! That is: if you manage
+          to attract them at all{' '}
           <span role="img" aria-label="Scream">
             🙀
           </span>
@@ -49,10 +50,12 @@ class Home extends Component {
             Ask questions and get comprehensive answers from experienced CTOs
           </li>
           <li>
-            Schedule 1:1 sessions with people you wouldn't otherwise be able to
-            access
+            Schedule 1:1 sessions with people you wouldn&#39;t otherwise be able
+            to access
           </li>
-          <li>Be confident you're not wasting precious money and resources</li>
+          <li>
+            Be confident you&#39;re not wasting precious money and resources
+          </li>
           <li>Finally get the respect you deserve as a founder</li>
         </ul>
         <RaisedButton
